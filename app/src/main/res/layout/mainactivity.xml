@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#025E02">
+
+    <Button
+            android:text="CADASTRE-SE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_button_cadastrar"
+            app:layout_constraintTop_toBottomOf="@+id/main_button_entrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#FFFBFB"
+            android:background="#100F0F"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.371"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp" />
+
+    <TextView
+            android:text="Digite sua senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.294"
+            android:textSize="24sp"
+            android:textColor="#0B0000" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/main_senha"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.144"
+            android:textColor="#F3EAEA"
+            android:textColorHint="#F8F3F3"
+            android:hint="Senha"
+            android:textColorHighlight="#FAF6F6" />
+
+    <Button
+            android:text="ENTRAR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_button_entrar"
+            app:layout_constraintTop_toBottomOf="@+id/main_senha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.208"
+            android:textColor="@color/colorBackground"
+            android:background="#0C0C0C"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp" />
+
+</android.support.constraint.ConstraintLayout>
